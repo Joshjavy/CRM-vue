@@ -26,10 +26,33 @@
                     <FormKit type="text"
                         label="Nombre"
                         placeholder="Nombre de cliente"
-                        help="Coloca el nombre del Cliente que deseas registrar"
                         validation="required"
                         :validation-messages="{ required:'El nombre del cliente es obligatorio'}"
                     />
+                
+                    <FormKit type="text"
+                        label="Apellidos"
+                        placeholder="Apellido"
+                        validation="required"
+                        :validation-messages="{ required:'Los Apellidos del cliente es obligatorio'}"
+                    />
+                    <FormKit type="email"
+                        label="Email"
+                        placeholder="Emai"
+                        validation="required|email"
+                        :validation-messages="{ required:'El E-mail del cliente es obligatorio', email:'Ingrese un email valido'}"
+                    />
+
+                    <FormKit type="text"
+                        label="Telefono"
+                        placeholder="Telefono: XXX-XXX-XXXX"
+                        validation="required|email"
+                        :validation-messages="{ required:'El E-mail del cliente es obligatorio', email:'Ingrese un email valido'}"
+                    />
+
+
+
+
 
                 </FormKit>
             </div>
