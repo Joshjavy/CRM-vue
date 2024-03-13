@@ -18,20 +18,27 @@
         <Heading> {{ titulo  }}</Heading>
 
         <div class="mx-auto mt-10 bg-white shadow">
-            <FormKit
-                type="form"
-                :actions="true"
-            >
-                <FormKit type="text"
-                    label="Nombre"
-                    placeholder="Nombre de cliente"
-                    help="Coloca el nombre del Cliente que deseas registrar"
-                    validation="required"
-                    :validation-messages="{ required:'El nombre del cliente es obligatorio'}"
-                />
+            <div class="mx-auto md:w-2/3 py-20 px-6">
+                <FormKit
+                    type="form"
+                    :actions="true"
+                >
+                    <FormKit type="text"
+                        label="Nombre"
+                        placeholder="Nombre de cliente"
+                        help="Coloca el nombre del Cliente que deseas registrar"
+                        validation="required"
+                        :validation-messages="{ required:'El nombre del cliente es obligatorio'}"
+                    />
 
-            </FormKit>
+                </FormKit>
+            </div>
         </div>
 
     </div>
 </template>
+<style>
+    .formkit-wrapper{
+        max-width: 100%;
+    }
+</style>
