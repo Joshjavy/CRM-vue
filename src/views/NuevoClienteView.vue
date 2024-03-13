@@ -21,7 +21,9 @@
             <div class="mx-auto md:w-2/3 py-20 px-6">
                 <FormKit
                     type="form"
-                    :actions="true"
+                    submit-label="Agregar Cliente"
+                    incomplete-message="No se pudo procesar tu peticion"
+
                 >
                     <FormKit type="text"
                         label="Nombre"
@@ -50,8 +52,15 @@
                         :validation-messages="{ matches:'El formato no es valido'}"
                     />
 
+                    <FormKit type="text"
+                        label="Empresa"
+                        placeholder="Empresa del cliente"
+                    />
 
-
+                    <FormKit type="text"
+                        label="Puesto"
+                        placeholder="Puesto del cliente"
+                    />
 
 
                 </FormKit>
