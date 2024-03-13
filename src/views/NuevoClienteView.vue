@@ -22,6 +22,13 @@
                 type="form"
                 :actions="true"
             >
+                <FormKit type="text"
+                    label="Nombre"
+                    placeholder="Nombre de cliente"
+                    help="Coloca el nombre del Cliente que deseas registrar"
+                    validation="required"
+                    :validation-messages="{ required:'El nombre del cliente es obligatorio'}"
+                />
 
             </FormKit>
         </div>
