@@ -1,3 +1,13 @@
 {
-    "clientes":[]
+  "clientes": [
+    {
+      "id": "6187",
+      "nombre": "Javier",
+      "apellidos": "Dominguez galindo",
+      "email": "joshjavy@gmail.com",
+      "telefono": "777-513-0683",
+      "empresa": "Izzi",
+      "puesto": "Desarrollador"
+    }
+  ]
 }
