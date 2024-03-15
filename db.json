@@ -8,6 +8,13 @@
       "telefono": "777-513-0683",
       "empresa": "Izzi",
       "puesto": "Desarrollador"
+    },
+    {
+      "id": "5f24",
+      "nombre": "Joshua",
+      "apellidos": "Dominguez Solano",
+      "email": "joshua@gmail.com",
+      "telefono": "777-513-0683"
     }
   ]
 }
