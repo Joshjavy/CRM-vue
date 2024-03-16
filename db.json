@@ -1,20 +1,14 @@
 {
   "clientes": [
     {
-      "id": "6187",
+      "id": "760f",
       "nombre": "Javier",
       "apellidos": "Dominguez galindo",
       "email": "joshjavy@gmail.com",
-      "telefono": "777-513-0683",
+      "telefono": "777-513-0583",
       "empresa": "Izzi",
-      "puesto": "Desarrollador"
-    },
-    {
-      "id": "5f24",
-      "nombre": "Joshua",
-      "apellidos": "Dominguez Solano",
-      "email": "joshua@gmail.com",
-      "telefono": "777-513-0683"
+      "puesto": "Desarrollador",
+      "estado": 1
     }
   ]
 }
