@@ -13,6 +13,9 @@ export default{
     },
     actializarCliente(id,data){
         return api.patch('/clientes/' + id, data)
+    },
+    cambiarEstadoCliente(id,data){
+        return api.patch('/clientes/'+id ,data)
     }
 
 }

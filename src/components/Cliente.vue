@@ -17,6 +17,8 @@ import Cliente from '@/components/Cliente.vue';
         return props.cliente.estado;
     })
 
+    defineEmits (['actualizar-estado'])
+
 </script>
 <template>
     <tr>
@@ -32,6 +34,7 @@ import Cliente from '@/components/Cliente.vue';
             <button 
                 class="inline-flex rounded-full px-2 text-xs font-semibold leading-5"
                 :class="[estadoCliente? 'bg-green-100 text-green-800' : ' bg-red-100 text-red-800']"
+                @click="$event=>$emit('actualizar-estado',{id:cliente.id,estado:cliente.estado})"
             >
                 {{ estadoCliente?'Activo':'Inactivo' }}
             </button>
@@ -40,6 +43,7 @@ import Cliente from '@/components/Cliente.vue';
             <RouterLink 
                 :to="{ name:'editar-cliente',params:{id:cliente.id} }"
                 class="text-indigo-600 hover:text-indigo-900 mr-5"
+                
             > 
                 Editar
             </RouterLink>

@@ -8,7 +8,7 @@
       "empresa": "Izzi",
       "puesto": "Desarrollador",
       "id": "760f",
-      "estado": 1
+      "estado": true
     },
     {
       "id": "760d",
@@ -18,7 +18,7 @@
       "telefono": "777-513-0583",
       "empresa": "Izzi",
       "puesto": "Desarrollador",
-      "estado": 0
+      "estado": true
     }
   ]
 }
