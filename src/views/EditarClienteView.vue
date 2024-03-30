@@ -10,25 +10,28 @@
     const route = useRoute();
     const { id } = route.params;
 
-    const formData = reactive({
-        nombre:'',
-        apellidos:'',
-        email:'',
-        telefono:'',
-        empresa:'',
-        puesto:'',
-    })
+    //const formData = reactive({
+    //   nombre:'',
+    //    apellidos:'',
+    //    email:'',
+    //    telefono:'',
+    //    empresa:'',
+    //    puesto:'',
+    //})
+    const formData = reactive({})
+    //const formData = ref({})
 
     onMounted (()=>{
         ClientesService.obtenerCliente(id)
             .then(({data})=>{
-                console.log(data)
-                formData.nombre = data.nombre
-                formData.apellidos= data.apellidos
-                formData.email= data.email
-                formData.telefono= data.telefono
-                formData.empresa= data.empresa
-                formData.puesto= data.puesto
+                Object.assign(formData, data);//reactive
+                // formData.value = data //ref
+                //formData.nombre = data.nombre
+                //formData.apellidos= data.apellidos
+                //formData.email= data.email
+                //formData.telefono= data.telefono
+                //formData.empresa= data.empresa
+                //formData.puesto= data.puesto
             })
             .catch(error => console.log(error));
     });
