@@ -9,6 +9,16 @@
       "empresa": "Izzi",
       "puesto": "Desarrollador",
       "estado": 1
+    },
+    {
+      "id": "760d",
+      "nombre": "Javier",
+      "apellidos": "Dominguez galindo",
+      "email": "joshjavy@gmail.com",
+      "telefono": "777-513-0583",
+      "empresa": "Izzi",
+      "puesto": "Desarrollador",
+      "estado": 0
     }
   ]
 }
