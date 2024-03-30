@@ -10,7 +10,9 @@ export default{
 
     obtenerCliente(id){
         return api.get('clientes/'+id);
+    },
+    actializarCliente(id,data){
+        return api.patch('/clientes/' + id, data)
     }
-
 
 }
