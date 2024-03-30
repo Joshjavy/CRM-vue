@@ -1,11 +1,14 @@
 <script setup>
     import { FormKit } from '@formkit/vue'
-    import { useRouter} from 'vue-router';
+    import { useRouter, useRoute } from 'vue-router';
     import ClientesService from '@/services/ClientesService';
     import RouterLink from '@/components/UI/RouterLink.vue';
     import Heading from '@/components/UI/Heading.vue'
     
     const router = useRouter();
+    const route = useRoute();
+    const { id } = route.params;
+    console.log(id);
     defineProps({
         titulo:{
             type:String,
