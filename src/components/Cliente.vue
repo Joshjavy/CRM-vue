@@ -17,7 +17,7 @@ import Cliente from '@/components/Cliente.vue';
         return props.cliente.estado;
     })
 
-    defineEmits (['actualizar-estado'])
+    defineEmits (['actualizar-estado','eliminar-cliente'])
 
 </script>
 <template>
@@ -50,6 +50,7 @@ import Cliente from '@/components/Cliente.vue';
 
             <button
                 class="text-red-600 hover:text-red-900"
+                @click="$emit('eliminar-cliente',cliente.id)"
             >
                 Eliminar
             </button>

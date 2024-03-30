@@ -31,6 +31,14 @@ const existenClientes = computed(() => {
             })
             .catch(error=>console.log(error))
     }
+    const eliminarCliente = (id)=>{
+        ClientesService.eliminarCliente(id)
+            .then(()=>{
+                clientes.value = clientes.value.filter(cliente=> cliente.id !== id)
+                
+            })
+            .catch(error=> console.log(error))
+    }
 </script>
 <template>
     <div>
@@ -57,6 +65,7 @@ const existenClientes = computed(() => {
                                 :key="cliente.id"
                                 :cliente="cliente"
                                 @actualizar-estado="actualizarEstado"
+                                @eliminar-cliente="eliminarCliente"
                                 
                             />
                         </tbody>
